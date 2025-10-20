@@ -11,7 +11,7 @@ We start in front of a chest but we cannot interact with it. The lock is glowing
 The goal is to find a way to open the chest and enjoy the cookies inside\!  
 You can interact with several objects and change settings through interactions in the game.
 
-Technical details  
+# Technical details  
 The project has been developed using Unity 6000.2.6f1.  
 Here is a link to the github repository: [https://github.com/Astri2/ESIR3-FIB-VAR-VR](https://github.com/Astri2/ESIR3-FIB-VAR-VR). You can simply clone and you should be able to run the game from Unity Editor.  
 Here is a link to the apk download:   
@@ -36,13 +36,13 @@ To eat a cookie, grab it, bring it to you and press the X button on the left con
 
 But there is more\! You can actually grab the cookie with your second hand as well (remember that pressing A on the right controller allows you to enable the hand). You can then scale up the cookie and get a **giant cookie**\!\!\!  
 
-Control Mechanisms  
+# Control Mechanisms  
 As shown above, two control mechanisms have been implemented:
 
 - Change of locomotion mode through the “Movement Menu”.  
 - Change of glowing color through the Color Picker.
 
-Player guidance
+# Player guidance
 
 Several features are present to help the user to feel comfortable and understand the environment he’s evolving into:
 
