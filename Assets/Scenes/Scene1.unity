@@ -10142,8 +10142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f10a758b1bf59742bfe32ba3d58798f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Eating
+  MainCamera: {fileID: 1125395381809813730}
   MainButtonAction: {fileID: -4670754937805108977, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   leftHand: {fileID: 2129219483}
+  dist: 0.2
 --- !u!1001 &1731517922
 PrefabInstance:
   m_ObjectHideFlags: 0

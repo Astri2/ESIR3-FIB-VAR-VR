@@ -4,8 +4,10 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class Eating : MonoBehaviour
 {
+    public Transform MainCamera;
     public InputActionReference MainButtonAction;
     public XRDirectInteractor leftHand;
+    public double dist;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,10 +26,10 @@ public class Eating : MonoBehaviour
                 //Debug.Log("Bouton pressé");
                 if (leftHand.interactablesSelected.Count > 0)
                 {
-                    var interactable = leftHand.interactablesSelected[0].transform.gameObject;
-                    if (interactable != null && interactable.CompareTag("Cookie"))
+                    var interactable = leftHand.interactablesSelected[0].transform;
+                    if (interactable != null && interactable.gameObject.CompareTag("Cookie") && Vector3.Distance(interactable.position, MainCamera.position) < dist)
                     {
-                        Destroy(interactable);
+                        Destroy(interactable.gameObject);
                     }
                     
                 }
