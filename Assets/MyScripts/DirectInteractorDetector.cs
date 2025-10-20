@@ -12,7 +12,9 @@ public class DirectInteractorDetector : MonoBehaviour
 
     [Header("Highlight Settings")]
     public Color highlightColor;
-    
+
+    private int CurrentHeldObjectLayer;
+
     void Awake()
     {
         directInteractor = GetComponent<XRDirectInteractor>();
@@ -58,13 +60,16 @@ public class DirectInteractorDetector : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         // Debug.Log($"Direct Interactor grabbed: {args.interactableObject.transform.name}");
-        args.interactableObject.transform.GetComponent<Collider>().enabled = false;
+        // args.interactableObject.transform.GetComponent<Collider>().enabled = false;
+        this.CurrentHeldObjectLayer = args.interactableObject.transform.gameObject.layer;
+        args.interactableObject.transform.gameObject.layer = LayerMask.NameToLayer("DirectGrabbed");
     }
 
     private void OnSelectExited(SelectExitEventArgs args)
     {
         // Debug.Log($"Direct Interactor dropped: {args.interactableObject.transform.name}");
-        args.interactableObject.transform.GetComponent<Collider>().enabled = true;
+        // args.interactableObject.transform.GetComponent<Collider>().enabled = true;
+        args.interactableObject.transform.gameObject.layer = this.CurrentHeldObjectLayer;
     }
     
 }

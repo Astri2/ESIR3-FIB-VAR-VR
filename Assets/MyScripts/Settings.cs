@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 
 public class Settings : MonoBehaviour
@@ -17,6 +18,8 @@ public class Settings : MonoBehaviour
 
     public GameObject TeleportationAnchors;
 
+    public InputActionReference RightMainButtonAction;
+
     public bool freeMove;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +27,30 @@ public class Settings : MonoBehaviour
     {
         CameraTracker = Camera.GetComponent<TrackedPoseDriver>();
         enableFreeMove(); // security check that scene if correctly configured
+    }
+
+    private void Update()
+    {
+        if (RightMainButtonAction.action.enabled && RightMainButtonAction.action.WasPressedThisFrame())
+        {
+            if(!RightDirectInterractor.activeSelf)
+            {
+                RightDisabled.SetActive(false);
+                RightRayInterractor.SetActive(false);
+                RightDirectInterractor.SetActive(true);
+            }
+            else
+            {
+                RightDirectInterractor.SetActive(false);
+                if(this.freeMove)
+                {
+                    RightDisabled.SetActive(true);
+                } else
+                {
+                    RightRayInterractor.SetActive(true);
+                }
+            }
+        }
     }
 
     public void enableFreeMove()

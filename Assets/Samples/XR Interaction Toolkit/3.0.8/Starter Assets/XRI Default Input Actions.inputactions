@@ -1544,6 +1544,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "MainButton",
+                    "type": "Button",
+                    "id": "18a5c4b7-9f98-49f5-8be1-27bab1bd4408",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1951,6 +1960,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thumbstick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "07e6d9d1-8e78-41b6-914a-e793a218e0dc",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

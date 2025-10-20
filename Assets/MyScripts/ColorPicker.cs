@@ -77,6 +77,7 @@ public class ColorPicker : MonoBehaviour
         if (settings.freeMove)
         {
             settings.RightDisabled.SetActive(false);
+            settings.RightDirectInterractor.SetActive(false);
             settings.RightRayInterractor.SetActive(true);
         }
     }

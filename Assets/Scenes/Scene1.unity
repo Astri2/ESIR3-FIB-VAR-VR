@@ -209,7 +209,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -312,13 +312,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 72633265}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &72633265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72633257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!4 &72947746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7791374783612029303, guid: f2d094e909cc8c54d94a12cafa75fa1d, type: 3}
@@ -431,6 +455,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 104618850}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104618856}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &104618848 stripped
 Transform:
@@ -479,7 +506,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -582,13 +609,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 104618856}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &104618856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104618849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &130009821
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +756,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 72633259}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 72633265}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!1 &168626518
 GameObject:
@@ -818,6 +872,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 176398124}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 176398130}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &176398122 stripped
 Transform:
@@ -866,7 +923,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -969,13 +1026,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 176398130}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &176398130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176398123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &198361908 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6447655238380225332, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
@@ -1283,6 +1364,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 277603463}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 277603469}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &277603461 stripped
 Transform:
@@ -1331,7 +1415,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -1434,13 +1518,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 277603469}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &277603469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277603462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &281155764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1452,6 +1560,10 @@ PrefabInstance:
     - target: {fileID: 1535171795492828988, guid: b1d4b9203dee55f45a9082daca193c88, type: 3}
       propertyPath: m_Name
       value: Book_B_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535171795492828988, guid: b1d4b9203dee55f45a9082daca193c88, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2163370705607732614, guid: b1d4b9203dee55f45a9082daca193c88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1544,6 +1656,7 @@ MonoBehaviour:
   LeftDisabled: {fileID: 1207030651}
   RightDisabled: {fileID: 93169196}
   TeleportationAnchors: {fileID: 168626518}
+  RightMainButtonAction: {fileID: 3767578140724700619, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   freeMove: 0
 --- !u!4 &288595377
 Transform:
@@ -1791,6 +1904,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 357521415}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 357521421}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &357521413 stripped
 Transform:
@@ -1839,7 +1955,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -1942,13 +2058,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 357521421}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &357521421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357521414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!4 &357770834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7791374783612029303, guid: f2d094e909cc8c54d94a12cafa75fa1d, type: 3}
@@ -2294,6 +2434,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 378578306}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 378578312}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &378578304 stripped
 Transform:
@@ -2342,7 +2485,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -2445,13 +2588,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 378578312}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &378578312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378578305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &392232922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2519,19 +2686,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1406448616}
+    m_TransformParent: {fileID: 1708360345}
     m_Modifications:
     - target: {fileID: 380452442436233518, guid: db66b66f761249347b45ef948710e295, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.004600048
+      value: -4.7547
       objectReference: {fileID: 0}
     - target: {fileID: 380452442436233518, guid: db66b66f761249347b45ef948710e295, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.012199998
+      value: 0.13389999
       objectReference: {fileID: 0}
     - target: {fileID: 380452442436233518, guid: db66b66f761249347b45ef948710e295, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5404
+      value: -0.5673001
       objectReference: {fileID: 0}
     - target: {fileID: 380452442436233518, guid: db66b66f761249347b45ef948710e295, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2583,6 +2750,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 397535593}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 397535599}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &397535591 stripped
 Transform:
@@ -2613,7 +2783,7 @@ MonoBehaviour:
   speed: 1
   wait: 5
   player: {fileID: 1125395381809813730}
-  dist: 0
+  dist: 3
 --- !u!114 &397535594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2631,7 +2801,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -2734,13 +2904,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 397535599}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &397535599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397535592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &401870508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2811,6 +3005,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 401870511}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401870517}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &401870509 stripped
 Transform:
@@ -2859,7 +3056,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -2962,13 +3159,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 401870517}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &401870517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401870510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &405771325
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,6 +3354,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 435097689}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 435097695}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &435097687 stripped
 Transform:
@@ -3181,7 +3405,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -3284,13 +3508,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 435097695}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &435097695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435097688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &451398671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
@@ -3338,7 +3586,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -3441,13 +3689,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 451398679}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &451398679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451398671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &511001429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3518,6 +3790,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1204316140}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1204316146}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!1001 &524665179
 PrefabInstance:
@@ -3589,6 +3864,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 524665182}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 524665188}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &524665180 stripped
 Transform:
@@ -3637,7 +3915,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -3740,13 +4018,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 524665188}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &524665188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524665181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &564551305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3817,6 +4119,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 564551308}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 564551314}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &564551306 stripped
 Transform:
@@ -3865,7 +4170,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -3968,13 +4273,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 564551314}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &564551314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564551307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &605416266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1534066118601383972, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
@@ -4050,6 +4379,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 607194354}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 607194360}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &607194352 stripped
 Transform:
@@ -4098,7 +4430,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -4201,13 +4533,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 607194360}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &607194360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607194353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &640880815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4875,6 +5231,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 697612059}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 697612065}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &697612057 stripped
 Transform:
@@ -4923,7 +5282,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -5026,13 +5385,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 697612065}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &697612065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697612058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &703093815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5103,6 +5486,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 703093818}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 703093824}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &703093816 stripped
 Transform:
@@ -5151,7 +5537,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -5254,13 +5640,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 703093824}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &703093824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703093817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &768123931 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
@@ -5308,7 +5718,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -5411,13 +5821,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 768123939}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &768123939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768123931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &819838480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5488,6 +5922,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 819838483}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 819838489}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &819838481 stripped
 Transform:
@@ -5536,7 +5973,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -5639,13 +6076,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 819838489}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &819838489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819838482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &855686373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5716,6 +6177,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 855686376}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 855686382}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &855686374 stripped
 Transform:
@@ -5764,7 +6228,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -5867,13 +6331,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 855686382}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &855686382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855686375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &867781230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5944,6 +6432,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 867781233}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 867781239}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &867781231 stripped
 Transform:
@@ -5992,7 +6483,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -6095,13 +6586,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 867781239}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &867781239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867781232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &880848974
 GameObject:
   m_ObjectHideFlags: 0
@@ -7068,6 +7583,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1110823328}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1110823334}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1110823326 stripped
 Transform:
@@ -7116,7 +7634,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -7219,13 +7737,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1110823334}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1110823334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110823327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1141104709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7296,6 +7838,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1141104712}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1141104718}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1141104710 stripped
 Transform:
@@ -7344,7 +7889,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -7447,13 +7992,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1141104718}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1141104718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141104711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1145667234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7686,6 +8255,50 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.006728537
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.0038046064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.0017467138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[4].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[0].renderers.Array.data[4].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[4].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[2].renderers.Array.data[4].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[3].renderers.Array.data[4].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178041319980965881, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_LODs.Array.data[4].renderers.Array.data[4].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490681798385768496, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 1534066118601383972, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       propertyPath: m_Name
       value: Gold Chest
@@ -7717,6 +8330,10 @@ PrefabInstance:
     - target: {fileID: 1640653850807073014, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.2533
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902608370425543344, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3039277138764613681, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       propertyPath: m_Layer
@@ -7767,12 +8384,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6447655238380225332, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447655238380225332, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6447655238380225332, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       propertyPath: m_TagString
       value: Lock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7042775838883704755, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8012477764809032182, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8508701727336085493, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7814,6 +8443,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8857369883583319746, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3217248538199056082, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
@@ -7834,6 +8467,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1534066118601383972, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1685356925}
+    - targetCorrespondingSourceObject: {fileID: 1534066118601383972, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1685356927}
     - targetCorrespondingSourceObject: {fileID: 1814572689372714480, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1579304890}
@@ -7926,6 +8562,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1157802675}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1157802681}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1157802673 stripped
 Transform:
@@ -7974,7 +8613,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -8077,13 +8716,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1157802681}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1157802681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157802674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1167482242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8154,6 +8817,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 451398673}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 451398679}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!1 &1174362084 stripped
 GameObject:
@@ -8250,6 +8916,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1174974073}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1174974079}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1174974071 stripped
 Transform:
@@ -8298,7 +8967,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -8401,13 +9070,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1174974079}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1174974079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174974072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!4 &1181932200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7791374783612029303, guid: f2d094e909cc8c54d94a12cafa75fa1d, type: 3}
@@ -8483,6 +9176,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1188394475}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1188394481}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1188394473 stripped
 Transform:
@@ -8531,7 +9227,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -8634,13 +9330,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1188394481}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1188394481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188394474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1191916665
 GameObject:
   m_ObjectHideFlags: 0
@@ -8722,7 +9442,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -8825,13 +9545,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1204316146}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1204316146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204316138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1207030651
 GameObject:
   m_ObjectHideFlags: 0
@@ -8934,6 +9678,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1214548176}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1214548182}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1214548174 stripped
 Transform:
@@ -8982,7 +9729,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -9085,13 +9832,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1214548182}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1214548182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214548175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1226387196
 GameObject:
   m_ObjectHideFlags: 0
@@ -9241,6 +10012,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1298383956}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1298383962}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1298383954 stripped
 Transform:
@@ -9289,7 +10063,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -9392,13 +10166,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1298383962}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1298383962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298383955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1319986486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9474,7 +10272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390256290}
   m_Layer: 0
-  m_Name: UselessProps
+  m_Name: StaticProps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9558,10 +10356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 380452442436233518, guid: db66b66f761249347b45ef948710e295, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 397535591}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
@@ -9569,6 +10364,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406448618}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1406448624}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1406448616 stripped
 Transform:
@@ -9617,7 +10415,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -9720,13 +10518,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1406448624}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1406448624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406448617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1490423354
 GameObject:
   m_ObjectHideFlags: 0
@@ -10263,6 +11085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book_B_Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 9073644575141162179, guid: 35d6eb4069e999c4085fb83c0d486fd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10347,6 +11173,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 768123933}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 768123939}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!1001 &1664156702
 PrefabInstance:
@@ -10431,6 +11260,26 @@ PrefabInstance:
     - target: {fileID: 5694741496452010863, guid: fa28b352862d5cd4bb3513f56942579a, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525968111667779327, guid: fa28b352862d5cd4bb3513f56942579a, type: 3}
+      propertyPath: m_SelectMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525968111667779327, guid: fa28b352862d5cd4bb3513f56942579a, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525968111667779327, guid: fa28b352862d5cd4bb3513f56942579a, type: 3}
+      propertyPath: m_AddDefaultGrabTransformers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525968111667779327, guid: fa28b352862d5cd4bb3513f56942579a, type: 3}
+      propertyPath: m_StartingMultipleGrabTransformers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525968111667779327, guid: fa28b352862d5cd4bb3513f56942579a, type: 3}
+      propertyPath: 'm_StartingMultipleGrabTransformers.Array.data[0]'
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10575,6 +11424,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1669870476}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1669870482}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1669870474 stripped
 Transform:
@@ -10623,7 +11475,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -10726,13 +11578,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1669870482}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1669870482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669870475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!4 &1675378595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7791374783612029303, guid: f2d094e909cc8c54d94a12cafa75fa1d, type: 3}
@@ -10779,6 +11655,33 @@ MonoBehaviour:
   grabbable: {fileID: 1490423354}
   cookies: {fileID: 1708360344}
   bottomLodColliders: {fileID: 1849405724}
+--- !u!54 &1685356927
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605416266}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1701603023
 GameObject:
   m_ObjectHideFlags: 0
@@ -10916,6 +11819,7 @@ Transform:
   - {fileID: 768123932}
   - {fileID: 72633258}
   - {fileID: 451398672}
+  - {fileID: 397535591}
   - {fileID: 1406448616}
   - {fileID: 1828568926}
   - {fileID: 1955177322}
@@ -11027,6 +11931,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1731517925}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731517931}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1731517923 stripped
 Transform:
@@ -11075,7 +11982,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -11178,13 +12085,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1731517931}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1731517931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731517924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!23 &1739307015
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11326,6 +12257,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1742564650}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1742564656}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1742564648 stripped
 Transform:
@@ -11374,7 +12308,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -11477,13 +12411,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1742564656}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1742564656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742564649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1769502548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11554,6 +12512,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2051168481}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2051168487}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!1001 &1794278444
 PrefabInstance:
@@ -11625,6 +12586,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1794278447}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794278453}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1794278445 stripped
 Transform:
@@ -11673,7 +12637,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -11776,13 +12740,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1794278453}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1794278453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794278446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1806504128 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3727475183003168290, guid: 36f0b95c8afb6ca49b8e112cc8fba58d, type: 3}
@@ -12012,6 +13000,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1828568928}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1828568934}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1828568926 stripped
 Transform:
@@ -12060,7 +13051,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -12163,13 +13154,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1828568934}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1828568934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828568927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1834923595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12240,6 +13255,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1834923598}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1834923604}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1834923596 stripped
 Transform:
@@ -12288,7 +13306,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -12391,13 +13409,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1834923604}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1834923604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834923597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1848041096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12468,6 +13510,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1848041099}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848041105}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1848041097 stripped
 Transform:
@@ -12516,7 +13561,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -12619,13 +13664,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1848041105}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1848041105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848041098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1849405724
 GameObject:
   m_ObjectHideFlags: 0
@@ -12756,6 +13825,10 @@ PrefabInstance:
     - target: {fileID: 399967837278327802, guid: ca18123093a406f489183b8b9bbb1407, type: 3}
       propertyPath: m_Name
       value: Book_C_Gray
+      objectReference: {fileID: 0}
+    - target: {fileID: 399967837278327802, guid: ca18123093a406f489183b8b9bbb1407, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1064863870582917440, guid: ca18123093a406f489183b8b9bbb1407, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12987,6 +14060,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1955177324}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1955177330}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1955177322 stripped
 Transform:
@@ -13035,7 +14111,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -13138,13 +14214,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1955177330}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1955177330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955177323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1960758202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13215,6 +14315,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1960758205}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1960758211}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1960758203 stripped
 Transform:
@@ -13263,7 +14366,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -13366,13 +14469,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1960758211}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1960758211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960758204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &1962247579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13443,6 +14570,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1962247582}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1962247588}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1962247580 stripped
 Transform:
@@ -13491,7 +14621,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -13594,13 +14724,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1962247588}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1962247588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962247581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &1979145441
 GameObject:
   m_ObjectHideFlags: 0
@@ -13708,6 +14862,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1989670689}
+    - targetCorrespondingSourceObject: {fileID: 1012311386055193492, guid: db66b66f761249347b45ef948710e295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1989670695}
   m_SourcePrefab: {fileID: 100100000, guid: db66b66f761249347b45ef948710e295, type: 3}
 --- !u!4 &1989670687 stripped
 Transform:
@@ -13756,7 +14913,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -13859,13 +15016,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 1989670695}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1989670695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989670688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1 &2010846179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13929,7 +15110,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -14032,13 +15213,37 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 2051168487}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &2051168487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051168479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Transformers.XRGeneralGrabTransformer
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowOneHandedScaling: 0
+  m_AllowTwoHandedScaling: 1
+  m_OneHandedScaleSpeed: 0.5
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 1
+  m_MaximumScaleRatio: 10
+  m_ScaleMultiplier: 1
 --- !u!1001 &2074465201
 PrefabInstance:
   m_ObjectHideFlags: 0

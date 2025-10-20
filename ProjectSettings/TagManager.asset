@@ -29,8 +29,8 @@ TagManager:
   - DirectInteracotr
   - DirectGrabbable
   - RayGrabbable
-  - 
-  - 
+  - DirectGrabbed
+  - TongueLod
   - 
   - 
   - 
