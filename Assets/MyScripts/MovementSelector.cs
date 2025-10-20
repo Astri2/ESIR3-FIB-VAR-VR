@@ -7,7 +7,6 @@ public class MovementSelector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Passe");
         if (other.gameObject.CompareTag("FreeMoveToggle"))
         {
             settings.enableFreeMove();

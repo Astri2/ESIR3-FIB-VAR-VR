@@ -33,10 +33,9 @@ public class ColorPicker : MonoBehaviour
             float radius = topCylinderTransform.lossyScale.x / 2.0f;
             float v = 1.0f;
             float s = Vector2.Distance(hitPosition, topCylinderTransform.position) / radius;
-            Debug.Log(s);
             if (s > 1.0f)
             {
-                Debug.Log("Should not happen");
+                Debug.LogWarning("Hit outside of picker. Should not happen");
                 return;
             }
 
@@ -66,7 +65,6 @@ public class ColorPicker : MonoBehaviour
                 default: r = v; g = p; b = q; break;
             }
             
-            Debug.Log("Hi :)");
             SelectedColor = new Color(r, g, b, 1.0f);
             colorPickDisplayMat.SetColor(ColorProp, SelectedColor);
         }

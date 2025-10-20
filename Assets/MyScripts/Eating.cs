@@ -8,6 +8,7 @@ public class Eating : MonoBehaviour
     public InputActionReference MainButtonAction;
     public XRDirectInteractor leftHand;
     public double dist;
+    public AudioSource eatSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class Eating : MonoBehaviour
                     var interactable = leftHand.interactablesSelected[0].transform;
                     if (interactable != null && interactable.gameObject.CompareTag("Cookie") && Vector3.Distance(interactable.position, MainCamera.position) < dist)
                     {
+                        eatSound.Play();
                         Destroy(interactable.gameObject);
                     }
                 }

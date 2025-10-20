@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class TeleportationPad : MonoBehaviour
     public Material hoverMaterial;
     
     private Renderer renderer;
+    public AudioSource TpSound;
+    public float TPDelay;
 
     private void Awake()
     {
@@ -21,9 +24,9 @@ public class TeleportationPad : MonoBehaviour
 
     public void TeleportHere()
     {
-        Debug.Log("Passe");
+        TpSound.Play();
         Vector3 target = new Vector3(this.transform.position.x, MainCamera.position.y, this.transform.position.z);
-        XROrigin.MoveCameraToWorldLocation(target);
+        StartCoroutine(TeleportAfter(TPDelay, target));
     }
 
     public void HoverEnter()
@@ -34,6 +37,13 @@ public class TeleportationPad : MonoBehaviour
     public void HoverExit()
     {
         renderer.material = baseMaterial;
+    }
+
+    private IEnumerator TeleportAfter(float time, Vector3 target)
+    {
+        yield return new WaitForSeconds(time);
+        XROrigin.MoveCameraToWorldLocation(target);
+
     }
     
 }
