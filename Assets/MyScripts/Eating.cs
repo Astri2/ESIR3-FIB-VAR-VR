@@ -31,7 +31,6 @@ public class Eating : MonoBehaviour
                     {
                         Destroy(interactable.gameObject);
                     }
-                    
                 }
             }
         }

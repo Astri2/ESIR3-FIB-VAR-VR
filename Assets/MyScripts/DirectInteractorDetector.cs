@@ -45,25 +45,25 @@ public class DirectInteractorDetector : MonoBehaviour
 
     private void OnHoverEnter(HoverEnterEventArgs args)
     {
-        Debug.Log($"Direct Interactor touched: {args.interactableObject.transform.name}");
+        // Debug.Log($"Direct Interactor touched: {args.interactableObject.transform.name}");
         objectRenderer.material = highlightMaterial;
     }
 
     private void OnHoverExit(HoverExitEventArgs args)
     {
-        Debug.Log($"Direct Interactor left: {args.interactableObject.transform.name}");
+        // Debug.Log($"Direct Interactor left: {args.interactableObject.transform.name}");
         objectRenderer.material = originalMaterial;
     }
 
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
-        Debug.Log($"Direct Interactor grabbed: {args.interactableObject.transform.name}");
+        // Debug.Log($"Direct Interactor grabbed: {args.interactableObject.transform.name}");
         args.interactableObject.transform.GetComponent<Collider>().enabled = false;
     }
 
     private void OnSelectExited(SelectExitEventArgs args)
     {
-        Debug.Log($"Direct Interactor dropped: {args.interactableObject.transform.name}");
+        // Debug.Log($"Direct Interactor dropped: {args.interactableObject.transform.name}");
         args.interactableObject.transform.GetComponent<Collider>().enabled = true;
     }
     
